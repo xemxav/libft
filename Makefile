@@ -3,10 +3,10 @@
 #                                                               /              #
 #    Makefile                                         .::    .:/ .      .::    #
 #                                                  +:+:+   +:    +:  +:+:+     #
-#    By: xmoreau <xmoreau@student.le-101.fr>        +:+   +:    +:    +:+      #
+#    By: xem <xem@student.le-101.fr>                +:+   +:    +:    +:+      #
 #                                                  #+#   #+    #+    #+#       #
 #    Created: 2017/11/23 15:01:29 by xmoreau      #+#   ##    ##    #+#        #
-#    Updated: 2018/06/07 13:53:11 by xmoreau     ###    #+. /#+    ###.fr      #
+#    Updated: 2018/11/01 17:17:23 by xem         ###    #+. /#+    ###.fr      #
 #                                                          /                   #
 #                                                         /                    #
 # **************************************************************************** #
@@ -85,22 +85,24 @@ SRC = ft_memset.c \
 		ft_intcount.c \
 		ft_triabulles.c \
 		get_next_line.c \
-		fd_printf.c \
-		flag_parsing2.c \
-		ft_printf.c \
-		itoa_base_s.c \
-		itoa_base_u.c \
-		make_flags.c \
-		make_s_c.c \
-		precision.c \
-		run_big_c.c \
-		run_big_s.c \
-		start_processing.c \
-		processing.c \
-		struct_management.c \
-		trees.c \
-		width_for_chr.c \
-		width.c
+		multi_split.c \
+		ft_long_atoi.c \
+		ft_printf/fd_printf.c \
+		ft_printf/flag_parsing2.c \
+		ft_printf/ft_printf.c \
+		ft_printf/itoa_base_s.c \
+		ft_printf/itoa_base_u.c \
+		ft_printf/make_flags.c \
+		ft_printf/make_s_c.c \
+		ft_printf/precision.c \
+		ft_printf/run_big_c.c \
+		ft_printf/run_big_s.c \
+		ft_printf/start_processing.c \
+		ft_printf/processing.c \
+		ft_printf/struct_management.c \
+		ft_printf/trees.c \
+		ft_printf/width_for_chr.c \
+		ft_printf/width.c
 
 OBJ = $(SRC:.c=.o)
 

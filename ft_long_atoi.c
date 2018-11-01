@@ -1,25 +1,38 @@
 /* ************************************************************************** */
 /*                                                          LE - /            */
 /*                                                              /             */
-/*   ft_strcmp.c                                      .::    .:/ .      .::   */
+/*   ft_long_atoi.c                                   .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
 /*   By: xem <xem@student.le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
-/*   Created: 2017/11/23 15:05:44 by xmoreau      #+#   ##    ##    #+#       */
-/*   Updated: 2018/08/05 18:29:39 by xem         ###    #+. /#+    ###.fr     */
+/*   Created: 2018/09/26 13:33:03 by xmoreau      #+#   ##    ##    #+#       */
+/*   Updated: 2018/11/01 17:15:34 by xem         ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strcmp(const char *s1, const char *s2)
+long		ft_long_atoi(const char *str)
 {
-	int	i;
+	long	result;
+	long	neg;
 
-	i = 0;
-	while ((unsigned char)s1[i] != '\0' && (unsigned char)s2[i] != '\0' &&
-	(unsigned char)s2[i] == (unsigned char)s1[i])
-		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	result = 0;
+	neg = 1;
+	str = (char *)str;
+	while (((*str >= 9) && (*str <= 13)) || (*str == ' '))
+		str++;
+	if (*str == '-' || *str == '+')
+	{
+		if (*str == '-')
+			neg = -1;
+		str++;
+	}
+	while (*str >= '0' && *str <= '9')
+	{
+		result = 10 * result + (*str - '0');
+		str++;
+	}
+	return (result * neg);
 }

@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   libft.h                                          .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: xmoreau <xmoreau@student.le-101.fr>        +:+   +:    +:    +:+     */
+/*   By: xem <xem@student.le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2017/11/23 15:01:19 by xmoreau      #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/06 16:45:05 by xmoreau     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/11/01 17:16:51 by xem         ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -20,7 +20,7 @@
 # include <sys/types.h>
 # include <sys/uio.h>
 # include <fcntl.h>
-# include "ft_printf.h"
+# include "ft_printf/ft_printf.h"
 
 # define BUFF_SIZE	8
 
@@ -99,5 +99,7 @@ int					ft_islower(int c);
 size_t				ft_intcount(int n);
 int					*ft_triabulles(int nb, int *tab);
 int					get_next_line(const int fd, char **line);
+long				ft_long_atoi(const char *str);
+char				**multi_split(char const *s, char *c);
 
 #endif

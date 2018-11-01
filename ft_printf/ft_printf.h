@@ -3,10 +3,10 @@
 /*                                                              /             */
 /*   ft_printf.h                                      .::    .:/ .      .::   */
 /*                                                 +:+:+   +:    +:  +:+:+    */
-/*   By: xmoreau <xmoreau@student.le-101.fr>        +:+   +:    +:    +:+     */
+/*   By: xem <xem@student.le-101.fr>                +:+   +:    +:    +:+     */
 /*                                                 #+#   #+    #+    #+#      */
 /*   Created: 2018/04/19 10:23:15 by xmoreau      #+#   ##    ##    #+#       */
-/*   Updated: 2018/06/06 16:44:39 by xmoreau     ###    #+. /#+    ###.fr     */
+/*   Updated: 2018/11/01 17:09:13 by xem         ###    #+. /#+    ###.fr     */
 /*                                                         /                  */
 /*                                                        /                   */
 /* ************************************************************************** */
@@ -14,10 +14,7 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <unistd.h>
-# include <string.h>
-# include <stdlib.h>
-# include "libft.h"
+# include "../libft.h"
 # include <stdarg.h>
 # include <stdint.h>
 # include <wchar.h>
