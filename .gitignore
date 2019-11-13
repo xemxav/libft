@@ -1,0 +1,35 @@
+# Subject
+*.pdf
+
+# IDE
+.idea/
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+ft_ssl
+*.exe
+*.out
+
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
