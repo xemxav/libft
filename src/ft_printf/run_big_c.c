@@ -17,7 +17,7 @@ int				check_bytes_bigc(wint_t c)
 {
 	if (MB_CUR_MAX == 1 && c > 255)
 		return (-1);
-	if (c < 0)
+	if ((int)c < 0)
 		return (-1);
 	if (c >= 0xd800 && c <= 0xDFFF)
 		return (-1);

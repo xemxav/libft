@@ -55,7 +55,7 @@ char		*run_unsigned(t_infos *infos, va_list ap)
 	if (infos->ll)
 		return (itoa_base_u((unsigned long long)va_arg(ap, unsigned long long),
 		base));
-		if (infos->l || infos->convletter == 'U' || infos->convletter == 'B'
+	if (infos->l || infos->convletter == 'U' || infos->convletter == 'B'
 		|| infos->convletter == 'O')
 		return (itoa_base_u((unsigned long)va_arg(ap, unsigned long), base));
 	if (infos->hh)

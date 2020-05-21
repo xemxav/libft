@@ -38,10 +38,8 @@ char			*ft_itoa(int n)
 	char	*s;
 	int		isneg;
 	size_t	stringlen;
-	int		i;
 	long	n2;
 
-	i = 0;
 	isneg = 0;
 	stringlen = ft_intcount(n) + 1;
 	n2 = n;
